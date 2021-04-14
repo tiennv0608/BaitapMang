@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<form>
+    <input type="text" id="text">
+    <input type="button" value="translate" onclick="dich()">
+    <br>
+    <p id="translate"></p>
+</form>
+<script>
+    let arr1 = ["hello","good morning","one","two","good night"];
+    let arr2 = ["xin chào","chào buổi sáng","một","hai","chúc ngủ ngon"];
+    let index;
+    function dich() {
+        for (i=0;i<arr1.length;i++){
+            if (document.getElementById('text').value == arr1[i]){
+                index = arr2[i];
+            }
+        }
+        document.getElementById('translate').innerHTML=index;
+    }
+</script>
+</body>
+</html>
