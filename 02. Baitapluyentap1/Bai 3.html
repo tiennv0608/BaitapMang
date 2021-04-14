@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+    let numbers = +prompt("Nhập số lượng phần tử trong mảng :");
+    let array =[];
+    for (i=0;i<numbers;i++){
+        array[i] = +prompt("Nhập số thứ " +i);
+    }
+    let sum = array[0];
+    let max = array[0];
+    for (j=1;j<array.length;j++){
+        sum+=array[j];
+        if (array[j]>max){
+            max = array[j];
+        }
+    }
+    document.write("Phần tử có giá trị lớn nhất trong mảng là: "+max+"<br>");
+    document.write("Giá trị trung bình của các phần tử trong mảng là: "+(sum/numbers));
+</script>
+</body>
+</html>
