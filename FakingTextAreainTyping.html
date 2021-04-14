@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<h2>Type anything slowly</h2>
+<textarea id="text" cols="30" rows="10" onkeydown="textarea()"></textarea>
+<script>
+    function textarea() {
+        let arr = ["A", "M", "A", "Z", "I", "N", "G", " ", "G", "Ú", "T", "C", "H", "Ó", "P"];
+        let text = document.getElementById('text').value;
+        // let display = "";
+        // if (text == text + text) {
+            for (i = 0; i < arr.length; i++) {
+                text = arr[i];
+                break
+            }
+        // }
+        document.getElementById('text').innerHTML = text;
+    }
+
+
+
+</script>
+</body>
+</html>
