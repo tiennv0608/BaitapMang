@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+    let numbers = +prompt("Nhập số lượng phần tử trong mảng :");
+    while (numbers<=0){
+        alert("Số lượng phải lớn hơn 0");
+        numbers = +prompt("Nhập lại số lượng phần tử trong mảng :");
+    }
+    let array =[];
+    for (i=0;i<numbers;i++){
+        array[i] = +prompt("Nhập số thứ " +i);
+    }
+    let V=+prompt("Nhập số cần tìm :");
+    let index;
+    for (j=0;j<array.length;j++){
+        if (array[j]==V) {
+            index=j;
+        }
+    }
+    if (index>=0&&index<array.length){
+        alert(V+ " is in the array");
+    } else {
+        alert(V+ " is not in the array");
+    }
+</script>
+</body>
+</html>
