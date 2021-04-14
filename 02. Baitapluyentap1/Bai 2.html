@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+    let numbers = +prompt("Nhập số lượng phần tử trong mảng :");
+    let array =[];
+    for (i=0;i<numbers;i++){
+        array[i] = +prompt("Nhập số thứ " +i);
+    }
+    let index;
+    let max = array[0];
+    for (j=1;j<array.length;j++){
+        if (array[j]>max){
+            max = array[j];
+            index=j;
+        }
+    }
+    document.write("Phần tử có giá trị lớn nhất là "+max+" ở vị trí thứ "+(index+1));
+
+</script>
+</body>
+</html>
