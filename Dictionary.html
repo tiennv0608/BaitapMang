@@ -14,11 +14,14 @@
 <script>
     let arr1 = ["hello","good morning","one","two","good night"];
     let arr2 = ["xin chào","chào buổi sáng","một","hai","chúc ngủ ngon"];
-    let index;
+    let index= 0;
     function dich() {
         for (i=0;i<arr1.length;i++){
             if (document.getElementById('text').value == arr1[i]){
                 index = arr2[i];
+                break;
+            } else {
+                index = "This dictionary is not updated!"
             }
         }
         document.getElementById('translate').innerHTML=index;
