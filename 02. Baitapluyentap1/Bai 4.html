@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+    let numbers = +prompt("Nhập số lượng phần tử trong mảng :");
+    let array =[];
+    for (i=0;i<numbers;i++){
+        array[i] = +prompt("Nhập số thứ " +i);
+    }
+    let index;
+    for (let first=0,last=array.length-1;first<last;first++,last--){
+        index=array[first];
+        array[first]=array[last];
+        array[last]=index;
+        }
+    document.write(array);
+</script>
+</body>
+</html>
