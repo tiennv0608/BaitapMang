@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+    let numbers = +prompt("Nhập số lượng phần tử trong mảng :");
+    while (numbers<=0){
+        alert("Số lượng phải lớn hơn 0");
+        numbers = prompt("Nhập lại số lượng phần tử trong mảng :");
+    }
+    let array =[];
+    for (i=0;i<numbers;i++){
+        array[i] = +prompt("Nhập ký tự thứ " +i);
+    }
+    let count=0;
+    for (i=0;i<array.length;i++) {
+        if (!isNaN(array[i])) {
+            count++;
+        }
+    }
+    document.write("Số ký tự là số trong mảng là: "+count);
+</script>
+</body>
+</html>
