@@ -5,14 +5,15 @@
     <title>Title</title>
 </head>
 <body>
-<form style="text-align-all: center">
-<h1>Typing slowly</h1>
-<textarea id="output" onkeyup="changeValue(a)"></textarea>
-</form>
-    <script>
-    let a = "Ahihi đồ ngốc!";
+    <center>
+        <h1>Typing slowly</h1>
+        <textarea id="output" onkeyup="changeValue(a)" rows="10" cols="40"></textarea>
+    <center>
+<script>
+    let a = "Ahihi, you're đồ ngốc!";
     let i = 0;
     let str = '';
+
     function changeValue(n) {
         if (i < n.length) {
             str += n[i];
@@ -23,6 +24,6 @@
             str = "";
         }
     }
-    </script>
+</script>
 </body>
 </html>
