@@ -5,24 +5,24 @@
     <title>Title</title>
 </head>
 <body>
-<h2>Type anything slowly</h2>
-<textarea id="text" cols="30" rows="10" onkeydown="textarea()"></textarea>
-<script>
-    function textarea() {
-        let arr = ["A", "M", "A", "Z", "I", "N", "G", " ", "G", "Ú", "T", "C", "H", "Ó", "P"];
-        let text = document.getElementById('text').value;
-        // let display = "";
-        // if (text == text + text) {
-            for (i = 0; i < arr.length; i++) {
-                text = arr[i];
-                break
-            }
-        // }
-        document.getElementById('text').innerHTML = text;
+<form style="text-align-all: center">
+<h1>Typing slowly</h1>
+<textarea id="output" onkeyup="changeValue(a)"></textarea>
+</form>
+    <script>
+    let a = "Ahihi đồ ngốc!";
+    let i = 0;
+    let str = '';
+    function changeValue(n) {
+        if (i < n.length) {
+            str += n[i];
+            document.getElementById("output").value = str;
+            i++;
+        } else {
+            i = 0;
+            str = "";
+        }
     }
-
-
-
-</script>
+    </script>
 </body>
 </html>
