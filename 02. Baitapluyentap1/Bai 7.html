@@ -22,12 +22,15 @@
             index=j;
         }
     }
+    index = V + " khong thuoc mang da nhap"
+    alert(index)
     if (index>=0&&index<array.length) {
         for (x=index;x<array.length;x++){
             array[x]=array[x+1];
         }
+        array[x-1]=0
     }
-    console.log(array)
+    document.write(array)
 </script>
 </body>
 </html>
